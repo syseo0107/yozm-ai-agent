@@ -16,7 +16,7 @@ from tenacity import (
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# ① 비동기 클라이언트 생성
+# 비동기 클라이언트 생성
 openai_client = AsyncOpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 claude_client = AsyncAnthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
